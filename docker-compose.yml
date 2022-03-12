@@ -14,7 +14,7 @@ services:
   # Mongo Express Service
   mongo-express:
   image: mongo-express:latest #use the latest image. 
-  container_name: mono-express
+  container_name: mongo-express
   # restart: unless-stopped
   restart: always
   ports:
