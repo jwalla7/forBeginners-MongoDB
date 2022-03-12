@@ -9,7 +9,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: pass
     ports:
-      - 27017:27017
+      - "27017:27017"
     volumes: # optional to preserve database after container is deleted.
       - mongodb:/data/db
 # Mongo Express Service
@@ -19,7 +19,7 @@ services:
     restart: unless-stopped
     # restart: always
     ports:
-      - 8081:8081
+      - "8081:8081"
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: pass
