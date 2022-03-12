@@ -1,9 +1,9 @@
 version: '3.8'
 services:
   mongodb:
-    image: mongo:1.0 #use the latest image.
+    image: mongo:latest #use the latest image.
     container_name: mongodb
-    # restart: unless-stopped
+    restart: unless-stopped
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: pass
@@ -13,10 +13,10 @@ services:
       - data:/data
   # Mongo Express Service
   mongo-express:
-  image: mongo-express:1.0 #use the latest image. 
+  image: mongo-express:latest #use the latest image. 
   container_name: mongo-express
-  # restart: unless-stopped
-  restart: always
+  restart: unless-stopped
+  # restart: always
   ports:
     - 8081:8081
   environment:
