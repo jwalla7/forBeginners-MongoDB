@@ -1,4 +1,4 @@
-mackTerraPro= {
+mackTerraPro = {
     "year": 2022,
     "make": "Mack",
     "model": "TerraPro",
